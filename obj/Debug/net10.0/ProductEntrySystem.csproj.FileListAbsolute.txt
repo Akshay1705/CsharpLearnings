@@ -12,3 +12,4 @@ C:\Users\akshay\cSharpLearning\ProductEntrySystem\obj\Debug\net10.0\refint\Produ
 C:\Users\akshay\cSharpLearning\ProductEntrySystem\obj\Debug\net10.0\ProductEntrySystem.pdb
 C:\Users\akshay\cSharpLearning\ProductEntrySystem\obj\Debug\net10.0\ProductEntrySystem.genruntimeconfig.cache
 C:\Users\akshay\cSharpLearning\ProductEntrySystem\obj\Debug\net10.0\ref\ProductEntrySystem.dll
+C:\Users\akshay\cSharpLearning\ProductEntrySystem\obj\Debug\net10.0\ProductEntrySystem.sourcelink.json

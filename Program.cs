@@ -1,7 +1,34 @@
-﻿Console.WriteLine("=== Product Entry System ===");
+﻿decimal CalculateTotalValue(decimal price, int quantity)
+{
+    return price * quantity;
+}
+
+string GetStockStatus(int quantity)
+{
+    if (quantity == 0)
+    {
+        return "Out of Stock!";
+    }
+    else if (quantity < 5)
+    {
+        return "Low Stock!";
+    }
+    else if (quantity <= 20)
+    {
+        return $"{quantity} units available";
+    }
+    else
+    {
+        return "Good stock";
+    }
+}
+
+Console.WriteLine("=== Product Entry System ===");
+
+Product product = new Product();
 
 Console.Write("Enter product name: ");
-string productName = Console.ReadLine() ?? "<Unnamed Product>";
+product.Name = Console.ReadLine() ?? "<Unnamed Product>";
 
 Console.Write("Enter product price: ");
 
@@ -10,10 +37,18 @@ bool priceValid = decimal.TryParse(
     out decimal price
 );
 
-if (!priceValid)
+while (!priceValid || price < 0)
 {
-    price = 0;
+    Console.WriteLine("Please enter a valid price (0 or greater).");
+    Console.Write("Enter product price: ");
+
+    priceValid = decimal.TryParse(
+        Console.ReadLine(),
+        out price
+    );
 }
+
+product.Price = price;
 
 Console.Write("Enter product quantity: ");
 
@@ -22,33 +57,32 @@ bool quantityValid = int.TryParse(
     out int quantity
 );
 
-if (!quantityValid)
+while (!quantityValid || quantity < 0)
 {
-    quantity = 0;
+    Console.WriteLine("Please enter a valid quantity (0 or greater).");
+    Console.Write("Enter product quantity: ");
+
+    quantityValid = int.TryParse(
+        Console.ReadLine(),
+        out quantity
+    );
 }
 
-decimal totalValue = price * quantity;
+product.Quantity = quantity;
+
+decimal totalValue = CalculateTotalValue(
+    product.Price,
+    product.Quantity
+);
 
 Console.WriteLine();
-Console.WriteLine("=== Product Details ===");
-Console.WriteLine($"Product: {productName}");
-Console.WriteLine($"Price: ₹{price}");
-Console.WriteLine($"Quantity: {quantity}");
-Console.WriteLine($"Total Value: ₹{totalValue}");
 
-if (quantity == 0)
-{
-    Console.WriteLine("Stock Status: Out of Stock!");
-}
-else if (quantity < 5)
-{
-    Console.WriteLine("Stock Status: Low Stock!");
-}
-else if (quantity <= 20)
-{
-    Console.WriteLine($"Stock Status: {quantity} units available");
-}
-else
-{
-    Console.WriteLine("Stock Status: good stock");
-}
+Console.WriteLine("=== Product Details ===");
+
+Console.WriteLine($"Product: {product.Name}");
+Console.WriteLine($"Price: ₹{product.Price}");
+Console.WriteLine($"Quantity: {product.Quantity}");
+Console.WriteLine($"Total Value: ₹{totalValue}");
+Console.WriteLine(
+    $"Stock Status: {GetStockStatus(product.Quantity)}"
+);
