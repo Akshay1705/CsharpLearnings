@@ -1,0 +1,14 @@
+C:\Users\akshay\cSharpLearning\ProductEntrySystem\bin\Debug\net10.0\ProductEntrySystem.exe
+C:\Users\akshay\cSharpLearning\ProductEntrySystem\bin\Debug\net10.0\ProductEntrySystem.deps.json
+C:\Users\akshay\cSharpLearning\ProductEntrySystem\bin\Debug\net10.0\ProductEntrySystem.runtimeconfig.json
+C:\Users\akshay\cSharpLearning\ProductEntrySystem\bin\Debug\net10.0\ProductEntrySystem.dll
+C:\Users\akshay\cSharpLearning\ProductEntrySystem\bin\Debug\net10.0\ProductEntrySystem.pdb
+C:\Users\akshay\cSharpLearning\ProductEntrySystem\obj\Debug\net10.0\ProductEntrySystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\akshay\cSharpLearning\ProductEntrySystem\obj\Debug\net10.0\ProductEntrySystem.AssemblyInfoInputs.cache
+C:\Users\akshay\cSharpLearning\ProductEntrySystem\obj\Debug\net10.0\ProductEntrySystem.AssemblyInfo.cs
+C:\Users\akshay\cSharpLearning\ProductEntrySystem\obj\Debug\net10.0\ProductEntrySystem.csproj.CoreCompileInputs.cache
+C:\Users\akshay\cSharpLearning\ProductEntrySystem\obj\Debug\net10.0\ProductEntrySystem.dll
+C:\Users\akshay\cSharpLearning\ProductEntrySystem\obj\Debug\net10.0\refint\ProductEntrySystem.dll
+C:\Users\akshay\cSharpLearning\ProductEntrySystem\obj\Debug\net10.0\ProductEntrySystem.pdb
+C:\Users\akshay\cSharpLearning\ProductEntrySystem\obj\Debug\net10.0\ProductEntrySystem.genruntimeconfig.cache
+C:\Users\akshay\cSharpLearning\ProductEntrySystem\obj\Debug\net10.0\ref\ProductEntrySystem.dll
